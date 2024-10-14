@@ -75,6 +75,6 @@ int main(){
     int k=2;
     Node* head=convert(arr);
     print(head);
-    head=rotate(head,4);
+    head=rotate(head,k);
     print(head);
 }
