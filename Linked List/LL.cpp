@@ -158,7 +158,7 @@ Node* insertpos(Node* head,int element,int position){
     while(temp!=NULL){
         count++; 
         if(count+1==position){
-            Node* neww=new Node(element,temp);
+            Node* neww=new Node(element);
             neww->next=temp->next;
             temp->next=neww; 
             break;
@@ -199,7 +199,7 @@ int main() {
     arr.push_back(7);
 
     Node* head = convert_to_ll(arr);
-    head=insertval(head,12,15);
+    head=insertpos(head,11,2);
     print(head);
 
 }

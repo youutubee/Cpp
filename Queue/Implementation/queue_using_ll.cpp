@@ -25,7 +25,7 @@ class Queue{
         if(start == nullptr && end == nullptr){
             start=temp;
             end=temp;
-        }
+        }]
         else {
             end->next=temp;
             end=temp;
